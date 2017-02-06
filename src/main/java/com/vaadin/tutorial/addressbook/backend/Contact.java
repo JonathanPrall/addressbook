@@ -19,7 +19,7 @@ public class Contact implements Serializable, Cloneable {
 
     private String firstName = "";
     private String lastName = "";
-    private String phone = "";
+    private String task = "";
     private String email = "";
     private Date birthDate;
 
@@ -47,12 +47,12 @@ public class Contact implements Serializable, Cloneable {
         this.lastName = lastName;
     }
 
-    public String getPhone() {
-        return phone;
+    public String getTask() {
+        return task;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setTask(String task) {
+        this.task = task;
     }
 
     public String getEmail() {
@@ -83,7 +83,7 @@ public class Contact implements Serializable, Cloneable {
     @Override
     public String toString() {
         return "Contact{" + "id=" + id + ", firstName=" + firstName
-                + ", lastName=" + lastName + ", phone=" + phone + ", email="
+                + ", lastName=" + lastName + ", task=" + task + ", email="
                 + email + ", birthDate=" + birthDate + '}';
     }
 
