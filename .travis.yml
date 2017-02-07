@@ -3,3 +3,10 @@ install:
 - mvn install
 jdk:
 - oraclejdk8
+deploy:
+  provider: heroku
+  api_key:
+    secure: Ujdb4RXRLIQOW5Lbjt72ycG6tjETnzlNwW9XqP3tKSIwLAByEWqgqosH/BbSsyyDnVYqfWHjqyIK/XxXTf03+u1S8PmpTGblNSKpWGxjoNck3bqws+b172rKBPA2NOTeaLKO7/LjglEnlV5oEMk8y4F882T0udY0n2eX084tvJQgtiOZp9RnBKCiC+VcWfybK9PbzRYtj7yKGotOWCP826jPOmbHsUYSzk0bsh9hCMLcwaWC7DRHLeh8fxfhy6njdaWllh9OIxmr6tIpe/yKVZOxaKiUOmKxOCAJ2SdMkPxtQ4OoG3EPSq53FzKV4mtpdY+OH3q3SvgV7UaiJt9xWkI1vYZXZcaNqLGEQx0AnoDN1dpytOHGhwFyugCum/t4futf7MnmwNErpKiLfYo0qSyDkqs/v+OEgBEDGUkg6e8Xs3BaCjmCMc8/EW9zaVZ1yLcNnRXTVu72kpB6kGsejTtk057NuiBsq+KVbDfS+8/wjeQzl+hybIq3k59+Z6PdaB0PInClCvpT+6meOuDDGpgRHCbyitEUTsUXGztOcMN2wOF2kVqhTn8NhxQeilgrvK3MMMMkArgLo4WesBmTyt3Oqoi1WfWdrv6yw7Qtxq8IFVigYw658R1WO9eGKHNJHZCjoiv02a6Q4tDzzlmkvqWibASur6E6EcarTe4IEOY=
+  app: jprall-addressbook
+  on:
+    repo: JonathanPrall/addressbook
